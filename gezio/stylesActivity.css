@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+/* body background styles */
+body {
+	background: linear-gradient(-45deg, #e73c7e, #ee7752,  purple, #23a6d5);
+	background-size: 200% 200%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+}
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+  
+
+/*-------- MAIN Section --------*/  
+
+.activity {
+  position: relative;
+  margin: 4vw;
+  width: 90vw;
+  height: 140vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* ---------- SEARCH WAY -------------- */
+
+.breadcrumb {
+  position: absolute;
+  list-style: none;
+  font-size: 150%;
+  margin-left: 1%;
+  width: 100%;
+  height: auto;
+  top: -4.5%;
+  left: -1%;
+}
+/* Display list items side by side */
+.breadcrumb ul li {
+  display: inline;
+}
+/* Add a slash symbol (/) before/behind each list item */
+.breadcrumb ul li+li:before {
+  padding: 0.7%;
+  color: black;
+  content: "/\00a0";
+}
+/* Add a color to all links inside the list */
+.breadcrumb ul li a {
+  color: rgb(0, 0, 77);
+  text-decoration: underline;
+}
+/* Add a color on mouse-over */
+ul li a:hover {
+  color: #01447e;
+}
+
+
+/* ---------- PHOTO, HEADER AND BUTTONS ------------- */
+
+.photoAndHeader {
+  position: absolute;
+  width: 40%;
+  height: 35%;
+  left: 4%;
+  top: 2%;
+}
+.header1 {
+  position: relative;
+  color: gold;
+  font-size: 200%;
+  margin-bottom: 1%;
+}
+.photoAndHeader img {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  border-radius: 15px;
+}
+.buttons {
+  position: relative;
+  height: 10%;
+  text-align: center;
+}
+.buttons button {
+  width: 10%;
+  height: 100%;
+  margin: 1%;
+  background-color: transparent;
+  font-size: 150%;
+}
+.buttons p#likeCounter {
+  position: absolute;
+  font-size: 100%;
+  top: 115%;
+  left: 40.8%;
+}
+.buttons p#dislikeCounter {
+  position: absolute;
+  font-size: 100%;
+  top: 115%;
+  left: 55%;
+}
+
+/* ----------- INFO BLOCK ------------ */
+
+.information {
+  position: absolute;
+  width: 48%;
+  height: 35%;
+  left: 49%;
+  top: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.header2 {
+  position: relative;
+  color: gold;
+  font-size: 150%;
+  width: 100%;
+  height: 15%;
+  padding-left: 2%;
+  padding-top: 2%;
+}
+.information .content {
+  width: 100%;
+  height: 85%;
+  overflow-y: scroll;
+}
+.information p {
+  font-size: 150%;
+  position: relative;
+  margin: 2%;
+}
+
+
+/*--------------- COMMENT SECTION ---------------*/
+
+.commentSection {
+  position: absolute;
+  width: 47%;
+  height: 50%;
+  top: 45%;
+  left: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.commentAndSubmit {
+  position: relative;
+  width: 94%;
+  height: 20%;
+  left: 3%;
+  top: 3%;
+  background-color: rgb(202, 202, 202, 0.6);
+  border-bottom: 2px solid rgb(58, 58, 58);
+  margin-bottom: 2%;
+}
+.commentAndSubmit textarea {
+  position: relative;
+  width: 100%;
+  height: 65%;
+  outline: none;
+  font-size: 120%;
+  resize: none;
+  padding-left: 10px;
+  padding-top: 5px;
+  border: none;
+  background-color: rgb(202, 202, 202, 0);
+}
+.commentAndSubmit button {
+  position: relative;
+  left: 82%;
+  width: 15%;
+  height: 29%;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: large;
+}
+.commentList {
+  position: relative;
+  width: 94%;
+  height: 71%;
+  top: 6%;
+  left: 3%;
+  bottom: 3%;
+  overflow-y: scroll;
+}
+.comment {
+  position: relative;
+  width: 99%;
+  height: 25%;
+  margin-bottom: 1%;
+  background-color: rgb(202, 202, 202, 0.6);
+  border-radius: 10px;
+}
+.commentUser {
+  position: absolute;
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  border-right: 1px solid rgb(77, 77, 77);
+}
+.commentUser a {
+  text-decoration: none;
+}
+.commentUser a img {
+  position: relative;
+  top: 5%;
+  height: 55%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+.commentUser a p {
+  position: relative;
+  font-size: 130%;
+  color: black;
+}
+.commentContent {
+  position: absolute;
+  width: 85%;
+  height: 100%;
+  left: 15%;
+}
+.commentContent textarea {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 120%;
+  resize: none;
+  padding-left: 20px;
+  padding-top: 6.5%;
+  border: none;
+  background-color: rgb(202, 202, 202, 0);
+}
+
+
+/*---------------- MAP ---------------*/
+
+.location {
+  position: absolute;
+  top: 45%;
+  left: 56%;
+  width: 40%;
+  height: 40%;
+  border: 2px solid rgb(73, 0, 73);
+
+}
+.location iframe {
+  width: 100%;
+  height: 100%;
+}

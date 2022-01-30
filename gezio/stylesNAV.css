@@ -1,0 +1,178 @@
+nav {
+  position: relative;
+  height: 22vh;
+}
+
+/* ---- üst navigation ---- */
+.topNav {
+  position: relative;
+  background-color: purple;
+  height: 65%;
+}
+
+/* gezio */
+.brandName {
+  position: absolute;
+  height: 100%;
+  left: 6%;
+}
+.brandName a {
+  position: relative;
+  color: gold;
+  font-size: 400%;
+  text-decoration: none;
+}
+
+/* search bar */
+.searchBar {
+  position: absolute;
+  top: 32.5%;
+  left: 20%;
+  height: 35%;
+  width: 40%;
+}
+.searchBar input[type=text] {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 110%;
+  padding: 6px;
+  height: 100%;
+  width: 90%;
+  border: 1px solid #ccc;  
+  outline: none;
+}
+.searchBar button {
+  position: relative;
+  left: -1%;
+  background: white;
+  color: purple;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+  width: 9%;
+  font-size: 110%;
+  border: 1px solid #ccc;
+  border-left: 0px;
+}
+
+/* help icon */
+.help {
+  position: absolute;
+  left: 64%;
+  top: 32.5%;
+  height: 35%;
+  width: 2.5%;
+}
+.help a {
+  position: relative;
+  font-size: 200%;
+  text-decoration: none;
+  color: gold;
+}
+.help a:active {
+  opacity: 0.7;
+}
+
+/* countries */
+.country {
+  position: absolute;
+  left: 75%;
+  top: 30%;
+  height: 40%;
+  width: 8.5%;
+}
+.country select {
+  position: relative;
+  font-size: 150%;
+  width: 100%;
+  height: 100%;
+  outline: 0;
+  border: none;
+  color: gold;
+  background-color: purple;
+}
+.country select option:checked {
+  background: gold;
+  color: purple;  
+}
+
+/* profile */
+.user {
+  position: absolute;
+  top: 25%;
+  height: 50%;
+  width: 10%;
+  left: 87%;
+}
+.user a {
+  font-family: 'Dancing Script', cursive;
+  font-size: 200%;
+  text-decoration: none;
+  color: gold;
+}
+.user a p {
+  margin-left: 10px;
+  font-size: larger;
+}
+
+/* ---- alt navigation ---- */
+.bottomNav {
+  position: relative;
+  background-color: rgb(100, 0, 100);
+  height: 35%;
+}
+
+.dropdown {
+  position: relative;
+}
+#Music {
+  margin-left: 4%;
+}
+.dropbtn {
+  background-color: rgb(100, 1, 100);
+  color: gold;
+  border: none;
+  height: 100%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  font-size: x-large;
+}
+.dropdown-content {
+  position: absolute;
+  display: none; 
+  left: 1%;
+  background-color: #f1f1f1;
+  width: 9vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: purple;
+}
+#Music .dropdown-content {
+  margin-left: -1.3vw;
+}
+#Art .dropdown-content {
+  margin-left: -2.1vw;
+}
+#Entertainment .dropdown-content {
+  margin-left: 0.8vw;
+  width: 10vw;
+}
+#Technology .dropdown-content {
+  margin-left: -0.1vw;
+}
+#Others .dropdown-content {
+  margin-left: -1vw;
+}
+.dropdown-content a {
+  color: gold;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {opacity: 0.7;}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {opacity: 0.7;}

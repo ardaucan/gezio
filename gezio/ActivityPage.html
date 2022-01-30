@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gezio | Dune</title>
+    <link rel="stylesheet" href="stylesActivity.css">
+    <link rel="stylesheet" href="stylesNAV.css">
+    <script rel="stylesheet" src="iconsAndComments.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d16e25223a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <!-- custom scrollbar -->
+    <style> 
+        /* width */
+        .activity ::-webkit-scrollbar {
+            width: 10px;
+        }
+    
+        /* Track */
+        .activity ::-webkit-scrollbar-track {
+            background: #f1f1f170;
+        }
+    
+        /* Handle */
+        .activity ::-webkit-scrollbar-thumb {
+            background: rgba(128, 0, 128);
+        }
+    
+        /* Handle on hover */
+        .activity ::-webkit-scrollbar-thumb:hover {
+            background: rgba(109, 0, 109);
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="topNav">
+            <span class="brandName">
+                <a href="MainPageUser.html">gezio</a>
+            </span>
+    
+            <span class="searchBar">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </span>
+    
+            <span class="help">
+                <a href="https://www.youtube.com/watch?v=wXd_BFZvaQc&ab_channel=DilaraAKSOY" class="fas fa-question-circle"></a>
+            </span>
+    
+            <span class="country">
+                <select>
+                    <option value="Antalya">Antalya</option>
+                    <option value="Ankara">Ankara</option>
+                    <option value="İstanbul">İstanbul</option>
+                    <option value="İzmir">İzmir</option>
+                </select>
+            </span>
+    
+            <span class="user">
+                <a href="ProfilePage.html">
+                    <i class="fas fa-user"> </i>
+                    <p style="display: inline;">Dicle</p>
+                </a>
+            </span>
+        </div>
+    
+        <div class="bottomNav">
+            <span id="Music" class="dropdown">
+                <button class="dropbtn">Music</button>
+                <div class="dropdown-content">
+                    <a href="#">Concert</a>
+                    <a href="#">Live Music</a>
+                    <a href="#">Opera</a>
+                </div>
+            </span>
+            
+            <span id="Art" class="dropdown">
+                <button class="dropbtn">Art</button>
+                <div class="dropdown-content">
+                    <a href="CategoryMovies.html">Movies</a>
+                    <a href="#">Museums</a>
+                    <a href="#">Theatre</a>
+                    <a href="#">Dance</a>
+                </div>
+            </span>
+            
+            <span id="Entertainment" class="dropdown">
+                <button class="dropbtn">Entertainment</button>
+                <div class="dropdown-content">
+                    <a href="#">Video Games</a>
+                    <a href="#">Stand-Up</a>
+                    <a href="#">Disco</a>
+                </div>
+            </span>
+            
+            <span id="Technology" class="dropdown">
+                <button class="dropbtn">Technology</button>
+                <div class="dropdown-content">
+                    <a href="#">E-Sport</a>
+                    <a href="#">Software</a>
+                    <a href="#">Technology Fair</a>
+                </div>
+            </span>
+            
+            <span id="Others" class="dropdown">
+                <button id="btnOthers" class="dropbtn">Others</button>
+                <div class="dropdown-content">
+                    <a href="#">Festival</a>
+                    <a href="#">Sport</a>
+                    <a href="#">Cooking</a>
+                    <a href="#">History</a>
+                </div>
+            </span>
+        </div>
+    </nav>
+
+    <div class="activity">
+        <!-- searchway -->
+        <div class="breadcrumb">
+            <ul class=>
+                <li><a href="MainPageUser.html">Home</a></li>
+                <li><a href="#">Art</a></li>
+                <li><a href="CategoryMovies.html">Movies</a></li>
+                <li>Dune</li>
+            </ul>
+        </div> 
+
+        <div class="photoAndHeader">
+            <h1 class="header1">DUNE</h1>
+            <img src="imgMovie1.png"> 
+            <div class="buttons">
+                <button id="heart" onclick="changeHeart(this)" class="far fa-heart"></button>
+                <button id="like" onclick="changeThumbsUp()" class="far fa-thumbs-up"></button>
+                <button id="dislike" onclick="changeThumbsDown()" class="far fa-thumbs-down"></button>
+                <button id="notInterest" onclick="changeIcon(this)" class="far fa-minus-square"></button>
+                
+                <p id="likeCounter"></p>
+                <p id="dislikeCounter"></p>
+
+                <script>
+                    writeCounters();
+                </script>
+            </div>
+        </div>
+
+        <div class="information">
+            <h2 class="header2">INFORMATION</h2>
+            <div class="content">
+                <p>A mythic and emotionally charged hero's journey, "Dune" tells the story of Paul Atreides,
+                    a brilliant and gifted young man born into a
+                    great destiny beyond his understanding, who must travel to the most dangerous
+                    planet in the universe to ensure the future of his family and his people.
+                </p>
+                <br>
+                <p> In Erasta cinemas on October 22, 2021! </p>
+                <br>
+                <p> If you want to see trailer <a href="https://www.youtube.com/watch?v=8g18jFHCLXk&ab_channel=WarnerBros.Pictures">click on!</a>  </p>
+            </div>
+        </div>
+
+        
+        <div class="commentSection">
+            <div class="commentAndSubmit">
+                <textarea id="commentArea" placeholder="Write comment..."></textarea>
+                <button onclick="submit()">Submit</button>
+            </div>
+
+            <div id="commentList" class="commentList">
+                <!-- this (first) comment should be hidden. -->
+                <div id="temp" class="comment" style="display: none;">
+                    <div class="commentUser">
+                        <a href="ProfilePage.html">
+                            <img src="2.png">
+                            <p>Dicle</p>
+                        </a>
+                    </div>
+                    <div class="commentContent">
+                        <textarea></textarea>
+                    </div>
+                </div>
+
+                <!-- real comments -->
+                <div class="comment">
+                    <div class="commentUser">
+                        <a href="ProfilePage.html">
+                            <img src="2.png" >
+                            <p>Yaren</p>
+                        </a>
+                    </div>
+                    <div class="commentContent" >
+                        <textarea >Çok beğendim!</textarea>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="commentUser">
+                        <a href="ProfilePage.html">
+                            <img src="2.png">
+                            <p>Arda</p>
+                        </a>
+                    </div>
+                    <div class="commentContent">
+                        <textarea>Rezalet!!!</textarea>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="commentUser">
+                        <a href="ProfilePage.html">
+                            <img src="2.png">
+                            <p>Dilara</p>
+                        </a>
+                    </div>
+                    <div class="commentContent">
+                        <textarea>Fena değildi...</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="location">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.295637656549!2d30.661994415635263!3d36.90719526936861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c38e2cbddf5b69%3A0x6f0e77393bd106bb!2sErasta%20AVM%20Antalya!5e0!3m2!1str!2str!4v1640021179279!5m2!1str!2str"
+                style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+    
+</body>
+</html>

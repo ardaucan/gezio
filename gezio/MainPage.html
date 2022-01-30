@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gezio | Main Page</title>
+
+    <link rel="stylesheet" href="stylesMainPage.css">
+    <link rel="stylesheet" href="stylesNAV.css">
+    <script src="slides.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d16e25223a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <nav>
+        <div class="topNav">
+            <span class="brandName">
+                <a href="MainPage.html">gezio</a>
+            </span>
+    
+            <span class="searchBar">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </span>
+    
+            <span class="help">
+                <a href="https://www.youtube.com/watch?v=wXd_BFZvaQc&ab_channel=DilaraAKSOY" class="fas fa-question-circle"></a>
+            </span>
+    
+            <span class="country">
+                <select>
+                    <option value="Antalya">Antalya</option>
+                    <option value="Ankara">Ankara</option>
+                    <option value="İstanbul">İstanbul</option>
+                    <option value="İzmir">İzmir</option>
+                </select>
+            </span>
+    
+            <span class="user">
+                <a href="LoginPage.html">
+                    <i class="fas fa-user"> </i>
+                    <p style="display: inline;">Login</p>
+                </a>
+            </span>
+        </div>
+    
+        <div class="bottomNav">
+            <span id="Music" class="dropdown">
+                <button class="dropbtn">Music</button>
+                <div class="dropdown-content">
+                    <a href="#">Concert</a>
+                    <a href="#">Live Music</a>
+                    <a href="#">Opera</a>
+                </div>
+            </span>
+    
+            <span id="Art" class="dropdown">
+                <button class="dropbtn">Art</button>
+                <div class="dropdown-content">
+                    <a href="CategoryMovies.html">Movies</a>
+                    <a href="#">Museums</a>
+                    <a href="#">Theatre</a>
+                    <a href="#">Dance</a>
+                </div>
+            </span>
+    
+            <span id="Entertainment" class="dropdown">
+                <button class="dropbtn">Entertainment</button>
+                <div class="dropdown-content">
+                    <a href="#">Video Games</a>
+                    <a href="#">Stand-Up</a>
+                    <a href="#">Disco</a>
+                </div>
+            </span>
+    
+            <span id="Technology" class="dropdown">
+                <button class="dropbtn">Technology</button>
+                <div class="dropdown-content">
+                    <a href="#">E-Sport</a>
+                    <a href="#">Software</a>
+                    <a href="#">Technology Fair</a>
+                </div>
+            </span>
+    
+            <span id="Others" class="dropdown">
+                <button id="btnOthers" class="dropbtn">Others</button>
+                <div class="dropdown-content">
+                    <a href="#">Festival</a>
+                    <a href="#">Sport</a>
+                    <a href="#">Cooking</a>
+                    <a href="#">History</a>
+                </div>
+            </span>
+        </div>
+    </nav>
+    
+    <div class="main">
+        <span class="popularActivities">
+            <h1 class="header" style="margin-bottom: 10px;"> Popular Activities </h1>
+            
+            <div class="slidesContainer">
+                <!-- Images -->
+                <div class="mySlides fade">
+                    <a href=""> <img src="imgMovie1.png"> </a> 
+                </div>
+            
+                <div class="mySlides fade">
+                    <a href="#"><img src="müze.jpg"></a>
+                </div>
+            
+                <div class="mySlides fade">
+                    <a href="#"> <img src="tolga.jpg"> </a>
+                </div>
+                
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                
+                <!-- The dots/circles -->
+                <div class="dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+            <script>
+                showSlides(1);
+            </script>
+        </span>
+
+        <span class="specialForYou">
+            <h1 class="header"> Special For You </h1>
+            
+            <div class="line1">
+                <a href=""> <img src="4.jpg" class="specials"> </a>
+                <a href=""> <img src="3.jpg" class="specials"> </a>
+                <a href=""> <img src="movie2.jpg" class="specials"> </a>
+            </div>
+            
+            <div class="line2">
+                <a href=""> <img src="örümcek.jpg" class="specials"> </a>
+                <a href=""> <img src="matrix.jpg" class="specials"> </a>
+                <a href=""> <img src="müze.jpg" class="specials"> </a>
+            </div>
+        </span>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gezio | Movies Page</title>
+
+    <link rel="stylesheet" href="stylesCategoryPage.css">
+    <link rel="stylesheet" href="stylesNAV.css">
+    <script src="slides.js"> </script>
+    <script src="iconsAndComments.js"></script>
+    <script src="filter.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d16e25223a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script:wght@600&display=swap"
+        rel="stylesheet">
+
+    <style> /* custom scrollbar */
+        
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f170;
+        }
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgba(128, 0, 128);
+        }
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(109, 0, 109);
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="topNav">
+            <span class="brandName">
+                <a href="MainPageUser.html">gezio</a>
+            </span>
+    
+            <span class="searchBar">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </span>
+    
+            <span class="help">
+                <a href="https://www.youtube.com/watch?v=wXd_BFZvaQc&ab_channel=DilaraAKSOY" class="fas fa-question-circle"></a>
+            </span>
+    
+            <span class="country">
+                <select>
+                    <option value="Antalya">Antalya</option>
+                    <option value="Ankara">Ankara</option>
+                    <option value="İstanbul">İstanbul</option>
+                    <option value="İzmir">İzmir</option>
+                </select>
+            </span>
+    
+            <span class="user">
+                <a href="ProfilePage.html">
+                    <i class="fas fa-user"> </i>
+                    <p style="display: inline;">Dicle</p>
+                </a>
+            </span>
+        </div>
+    
+        <div class="bottomNav">
+            <span id="Music" class="dropdown">
+                <button class="dropbtn">Music</button>
+                <div class="dropdown-content">
+                    <a href="#">Concert</a>
+                    <a href="#">Live Music</a>
+                    <a href="#">Opera</a>
+                </div>
+            </span>
+    
+            <span id="Art" class="dropdown">
+                <button class="dropbtn">Art</button>
+                <div class="dropdown-content">
+                    <a href="CategoryMovies.html">Movies</a>
+                    <a href="#">Museums</a>
+                    <a href="#">Theatre</a>
+                    <a href="#">Dance</a>
+                </div>
+            </span>
+    
+            <span id="Entertainment" class="dropdown">
+                <button class="dropbtn">Entertainment</button>
+                <div class="dropdown-content">
+                    <a href="#">Video Games</a>
+                    <a href="#">Stand-Up</a>
+                    <a href="#">Disco</a>
+                </div>
+            </span>
+    
+            <span id="Technology" class="dropdown">
+                <button class="dropbtn">Technology</button>
+                <div class="dropdown-content">
+                    <a href="#">E-Sport</a>
+                    <a href="#">Software</a>
+                    <a href="#">Technology Fair</a>
+                </div>
+            </span>
+    
+            <span id="Others" class="dropdown">
+                <button id="btnOthers" class="dropbtn">Others</button>
+                <div class="dropdown-content">
+                    <a href="#">Festival</a>
+                    <a href="#">Sport</a>
+                    <a href="#">Cooking</a>
+                    <a href="#">History</a>
+                </div>
+            </span>
+        </div>
+    </nav>
+
+
+    <div class="main">
+        <div class="breadcrumb">
+            <ul class=>
+                <li><a href="MainPageUser.html">Home</a></li>
+                <li><a href="#">Art</a></li>
+                <li>Movies</li>
+            </ul>
+        </div>
+    
+        <div class="filterSection">
+            <div class="filters">
+                <div id="f1" class="filter">
+                    <h1>Genre</h1>
+                    <div id="filterContent1">
+                        <input type="checkbox" id="horror">
+                        <label for="horror">Horror</label>
+                        <br>
+                        <input type="checkbox" id="comedy">
+                        <label for="comedy">Comedy</label>
+                        <br>
+                        <input type="checkbox" id="crime">
+                        <label for="crime">Crime</label>
+                        <br>
+                        <input type="checkbox" id="sci-fi">
+                        <label for="sci-fi">Sci-Fi</label>
+                        <br>
+                        <input type="checkbox" id="action">
+                        <label for="action">Action</label>
+                        <br>
+                        <input type="checkbox" id="drama">
+                        <label for="drama">Drama</label>
+                        <br>
+                        <input type="checkbox" id="romance">
+                        <label for="romance">Romance</label>
+                        <br>
+                        <input type="checkbox" id="thriller">
+                        <label for="thriller">Thriller</label>
+                        <br>
+                        <input type="checkbox" id="superhero">
+                        <label for="superhero">Superhero</label>
+                    </div>
+                </div>
+                
+                <br>
+                <hr>
+
+                <div id="f2" class="filter">
+                    <h1>Length</h1>
+                    <div id="filterContent2">
+                        <input type="checkbox" id="1h">
+                        <label for="1h">0-60 minutus</label>
+                        <br>
+                        <input type="checkbox" id="2h">
+                        <label for="2h">60-120 minutes</label>
+                        <br>
+                        <input type="checkbox" id="3h">
+                        <label for="3h">120-180 minutes</label>
+                        <br>
+                        <input type="checkbox" id="more">
+                        <label for="more">180+ minutes</label>
+                    </div>
+                </div>
+                
+                <br>
+                <hr>
+
+                <div id="f3" class="filter">
+                    <h1></h1>
+                </div>    
+            </div>
+            
+            <button onclick="applyFilter()"> Apply Filters </button>
+            <p id="reset" onclick="resetFilter()">Remove the filters</p>
+        </div>
+            
+        <div class="activitiesSection">
+            <div class="sort">
+                <p class="activityHeader">Activity</p>
+                <p class="placeDateHeader">Place / Date</p>
+            </div>
+
+            <div class="activityList">
+                <div class="activity action sci-fi 3h">
+                    <a href="">
+                        <img src="matrix.jpg">
+                        <h1>Matrix Resurrections</h1>
+                    </a>
+                    <button onclick="changeHeart(this)" class="far fa-heart"></button>
+                    <p class="placeDate">24 December 2021 <br> Migros AVM Antalya</p>
+                </div>
+                
+                <div class="activity sci-fi 3h">
+                    <a href="ActivityPage.html">
+                        <img src="imgMovie1.png">
+                        <h1>Dune</h1>
+                    </a>
+                <button class="far fa-heart" onclick="changeHeart(this)"></button>
+                    <p class="placeDate">24-30 December 2021 <br> Erasta AVM Antalya</p>
+                </div>
+                
+                <div class="activity sci-fi superhero 3h">
+                    <a href="">
+                        <img src="örümcek.jpg" alt="">
+                        <h1>Spiderman - No Way Home</h1>
+                    </a>
+                    <button class="far fa-heart" onclick="changeHeart(this)"></button>
+                    <p class="placeDate"></p>
+                </div>
+
+                <div class="activity thriller action crime drama 2h">
+                    <img src="movie2.jpg">
+                    <h1>The King's Man</h1>
+                    <button class="far fa-heart" onclick="changeHeart(this)"></button>
+                    <p class="placeDate"></p>
+                </div>
+                
+                <div class="activity drama crime more">
+                    <img src="movie3.jpg">
+                    <h1>The Godfather Part 2</h1>
+                    <button class="far fa-heart" onclick="changeHeart(this)"></button>
+                    <p class="placeDate"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
